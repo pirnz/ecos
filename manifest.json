@@ -1,0 +1,27 @@
+{
+    "name": "My Extension",
+    "version": "2",
+    "manifest_version": 2,
+    "description": "Gets information from Google.",
+    "background": {
+      "persistent": false,
+      "scripts": ["background_script.js"]
+    },
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/ecos16.png",
+        "32": "images/ecos32.png",
+        "48": "images/ecos48.png",
+        "120": "images/ecos120.png"
+      }
+    },
+    "options_page": "options.html",
+    "icons": {
+      "16": "images/ecos16.png",
+      "32": "images/ecos32.png",
+      "48": "images/ecos48.png",
+      "120": "images/ecos120.png"
+    },
+    "permissions": ["activeTab", "declarativeContent", "storage"]
+  }

@@ -5,7 +5,7 @@
     "description": "Gets information from Google.",
     "background": {
       "persistent": false,
-      "scripts": ["background_script.js"]
+      "scripts": ["backgroundScript.js"]
     },
     "page_action": {
       "default_popup": "popup.html",

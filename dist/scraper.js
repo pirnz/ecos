@@ -16,7 +16,7 @@ for (let [key, value] of Object.entries(toParse)) {
     try{
         dataParsed[key] = document.querySelector(value).content;
     }catch(err){
-        dataParsed[key] = null;
+        console.log(key + " was not found.")
     }
 };
 dataParsed;

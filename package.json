@@ -1,0 +1,27 @@
+{
+  "name": "ecos",
+  "version": "1.0.0",
+  "description": "This Chrome extension will find similar news in other sites, to be able to compare the facts exposed by different media outlets.",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kepair/ecos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kepair/ecos/issues"
+  },
+  "homepage": "https://github.com/kepair/ecos#readme",
+  "devDependencies": {
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "keyword-extractor": "0.0.19"
+  }
+}

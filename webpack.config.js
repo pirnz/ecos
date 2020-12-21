@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/background.js',
+  entry: './src/scraper.js',
   output: {
-    filename: 'background.js',
+    filename: 'scraper.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };

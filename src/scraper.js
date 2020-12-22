@@ -6,7 +6,7 @@ const languages = {
     es: "spanish",
     en: "english"
 }
-dataParsed.lang = languages[document.documentElement.lang.toLowerCase()];
+dataParsed.lang = languages[document.documentElement.lang.toLowerCase()] || "spanish";
 console.log("Language detected: " + dataParsed.lang);
 
 //Get basic data of the website
@@ -39,32 +39,23 @@ var keywordElements = {
     ogTitle: 'meta[property="og:title"]',
     ogDesc: 'meta[property="og:description"]'
 };
-var keywordExtractorOptions = {
+var options = {
     language: dataParsed.lang,
     remove_digits: true,
     return_changed_case: true,
     remove_duplicates: true
 };
-//console.log(keywordExtractorOptions);
-try{
-    dataParsed.article = keyword_extractor(document.querySelector('article').innerText, keywordExtractorOptions);
-}catch{
-    console.log("Article was not found.")
-}
-var aux =document.querySelector('meta[name="twitter:description"]').content;
-var raw = keyword_extractor(aux, keywordExtractorOptions);
-console.log(raw);
-/* for (let [key, value] of Object.entries(keywordElements)) {
+//console.log(options);
+dataParsed.raw = [];
+for (let [key, value] of Object.entries(keywordElements)) {
     try {
-        console.log(typeOf(document.querySelector(value).content));
-        aux[key] = document.querySelector(value).content;
-        dataParsed.raw = keyword_extractor(document.querySelector(value).content, keywordExtractorOptions);
+        dataParsed.raw = dataParsed.raw.concat(keyword_extractor.extract(document.querySelector(value).content, options));
     } catch (err) {
         console.log(key + " was not found.")
     }
-}; */
+};
 //Extract keywords of keywords
-console.log(dataParsed.raw)
-dataParsed.keywords = keyword_extractor.extract(dataParsed.raw.join(' '), keywordExtractorOptions);
+//console.log(dataParsed.raw)
+dataParsed.keywords = keyword_extractor.extract(dataParsed.raw.join(' '), options);
 console.log(dataParsed);
 chrome.runtime.sendMessage(dataParsed);

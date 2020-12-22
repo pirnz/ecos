@@ -18,3 +18,4 @@ This Chrome extension will find similar news in other sites, to be able to compa
 
 1. Extract data from the page
 2. I use the library [keyword-extractor](https://www.npmjs.com/package/keyword-extractor) to remove stopwords and punctuation (although it doesn't work perfectly).
+3. I use [webpack](https://webpack.js.org/) to pack the library

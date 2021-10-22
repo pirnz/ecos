@@ -1,11 +1,10 @@
 {
   "name": "Ecos",
   "version": "0.1",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "Gets information from the page.",
-  "browser_action": {
+  "action": {
     "default_popup": "popup.html",
-    "default_title": "Make this page red",
     "default_icon": {
       "16": "images/ecos16.png",
       "32": "images/ecos32.png",
@@ -19,5 +18,9 @@
     "48": "images/ecos48.png",
     "120": "images/ecos120.png"
   },
-  "permissions": ["tabs", "activeTab"]
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"]
 }
+

@@ -1,0 +1,16 @@
+WEB
+1
+https://sap.sharepoint.com/sites/102834/_vti_bin/owssvr.dll?XMLDATA=1&List={ACE1BBD5-0F22-474F-93FC-04176D3580E9}&View=2DDEEB49-2D6B-498D-AAFC-A282EA506EAC&RowLimit=0&RootFolder=
+
+Selection={ACE1BBD5-0F22-474F-93FC-04176D3580E9}-2DDEEB49-2D6B-498D-AAFC-A282EA506EAC
+EditWebPage=
+Formatting=None
+PreFormattedTextToColumns=True
+ConsecutiveDelimitersAsOne=True
+SingleBlockTextImport=False
+DisableDateRecognition=False
+DisableRedirections=False
+SharePointApplication=https://sap.sharepoint.com/sites/102834/_vti_bin
+SharePointListView=2DDEEB49-2D6B-498D-AAFC-A282EA506EAC
+SharePointListName={ACE1BBD5-0F22-474F-93FC-04176D3580E9}
+RootFolder=

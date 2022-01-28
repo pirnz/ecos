@@ -18,9 +18,6 @@
     "48": "images/ecos48.png",
     "120": "images/ecos120.png"
   },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "permissions": ["storage", "activeTab", "scripting"]
+  "permissions": ["activeTab", "scripting"]
 }
 

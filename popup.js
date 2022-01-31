@@ -4,7 +4,7 @@ async function main() {
 
   chrome.scripting.executeScript({
     target: {tabId: tab.id},
-    files: ['lib/jquery.min.js', 'lib/date-scrape.js', 'lib/site-scrape.js', 'lib/description-scrape.js', 'lib/language-scrape.js', 'lib/keywords-scrape.js', 'lib/title-scrape.js', 'scrape.js']}, 
+    files: ['lib/jquery.min.js', 'lib/date-scrape.js', 'lib/site-scrape.js', 'lib/description-scrape.js', 'lib/language-scrape.js', 'lib/keywords-scrape.js', 'lib/title-scrape.js', 'lib/data-prep.js']}, 
     function(result){
       //console.error(JSON.stringify(result))
       document.getElementById('title').innerHTML = result[0].result.title;

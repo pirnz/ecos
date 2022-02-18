@@ -12,12 +12,13 @@
       "120": "images/ecos120.png"
     }
   },
+  "options_page": "options.html",
   "icons": {
     "16": "images/ecos16.png",
     "32": "images/ecos32.png",
     "48": "images/ecos48.png",
     "120": "images/ecos120.png"
   },
-  "permissions": ["activeTab", "scripting"]
+  "permissions": ["activeTab", "scripting", "storage"]
 }
 
